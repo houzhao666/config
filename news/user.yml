@@ -5,3 +5,9 @@ spring:
     name: user
   profiles:
     active: dev
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health,info,bus-refresh
